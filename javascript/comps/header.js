@@ -1,3 +1,10 @@
 import {el} from "../helper/function.js"
-let header = el("div",{className:"header"})
+
+
+const header = el("div",{
+    className:"header",
+    innerHTML : 'in header'
+})
+
+
 export default header

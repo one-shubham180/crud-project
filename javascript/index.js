@@ -1,3 +1,11 @@
 import header from "./comps/header.js";
-document.body.appendChild(header)
-console.log(header)
+import { renderPage } from "./helper/function.js";
+import { setLocationEvent } from "./urls.js";
+
+setLocationEvent()
+const body = document.body
+
+
+window.addEventListener('location_change', ()=>{
+    refreshPage()
+})
